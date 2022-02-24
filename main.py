@@ -1,9 +1,9 @@
 from flask import render_template,Response,Flask 
 import flask
 app=Flask(__name__)
-@app.route('/herokuapp.com')
+@app.route('/')
 def main():
-    return(render_template("Loadingsite.html"))
+    return(render_template("LoadingSite.html"))
 @app.route('/Menu.html')
 def menu():
     return(render_template('Menu.html'))
