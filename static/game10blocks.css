@@ -1,0 +1,123 @@
+body
+{
+    background-color: black;
+}
+
+.game-board {
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 40px;
+    padding: 1rem;
+}
+
+.game-tile {
+    cursor: pointer;
+    background-color: rgba(143, 3, 3, 0.952);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px red;
+}
+
+.game-tile:hover {
+    border-radius: 5px;
+    background-color:#c03f1f85;
+    box-shadow: 0 0px 24px #c03f1f85;
+    transform: scale(1.2);
+    
+}
+.game-start
+{
+
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    text-align: center;
+    background-color: #d63434;
+    color:white;
+    border:none;
+    box-shadow: 0px 0px 40px red;
+}
+
+.game-start:hover
+{
+    background-color: #e25e5e;
+    cursor: pointer;
+}
+
+
+.center {
+    margin-top: 5%;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.game-score {
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    top:0px;
+    transform:translate(-50%,-50%);
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1rem;
+    box-shadow: 0px 0px 40px red;
+}
+@media screen and (max-width: 600px) {
+    .game-board {
+        width: 350px;
+        height: 450px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .game-score {
+        width: 40px;
+        height: 40px;
+    }
+    .game-start{
+        margin-top: 40px;
+    }
+}
+@media (min-width:601px) and (max-width: 1000px) {
+    .game-board {
+        width: 450px;
+        height: 550px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .game-score {
+        width: 40px;
+        height: 40px;
+    }
+    .game-start{
+        margin-top: 40px;
+    }
+}
+@media (min-width:1001px) and (max-width: 1400px) {
+    .game-score {
+        width: 40px;
+        height: 40px;
+    }
+    .game-start{
+        margin-top: 40px;
+    }
+}
+
