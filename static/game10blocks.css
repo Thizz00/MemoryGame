@@ -106,12 +106,19 @@ top:-2px;
 color:rgb(255, 255, 255);
 }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
     .game-board {
-        width: 400px;
+        width: 350px;
         height: 450px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
 }
-
+@media (min-width:601px) and (max-width: 1000px) {
+    .game-board {
+        width: 450px;
+        height: 550px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
