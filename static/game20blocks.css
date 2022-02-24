@@ -108,7 +108,7 @@ color:rgb(255, 255, 255);
 }
 @media (max-width: 649px) {
     .game-board {
-        width: 400px;
+        width: 350px;
         height: 600px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(8, 1fr);
