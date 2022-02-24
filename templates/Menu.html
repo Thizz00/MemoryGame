@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href='/static/main.css'>
+</head>
+<body>
+<div>
+    <div class = "center1" >
+        <h1>Memory Game </h1>
+        <br></br>
+        <h4 >It requires observation, concentration and a good memory to win. </h4>
+        <div class="center">
+    <a href="account.html" class="a--start "><span>Start</span></a>
+    <a class= "a--leaderboard"><span>Leaderboard</span> </a>
+    <a  href="#" onclick="return closeWindow();" class= "a--quit"><span>Quit</span> </a>
+    <footer>
+        <p> All right reserved.Jakub Kiełb 2022 ©</p>
+    </footer>
+</body>
+<script>
+ function closeWindow() {
+    let new_window =
+      open(location, '_self');
+
+  new_window.close();
+
+  return false;
+}
+</script>
+</html>
