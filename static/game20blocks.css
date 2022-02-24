@@ -1,0 +1,132 @@
+body
+{
+    background-color: black;
+}
+
+.game-board {
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+    width: 1800px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 40px;
+    padding: 1rem;
+}
+
+.game-tile {
+    cursor: pointer;
+    background-color: rgba(143, 3, 3, 0.952);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px red;
+}
+
+.game-tile:hover {
+    border-radius: 5px;
+    background-color:#c03f1f85;
+    box-shadow: 0 0px 24px #c03f1f85;
+    transform: scale(1.2);
+    
+}
+.game-start
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    text-align: center;
+    background-color: #d63434;
+    color:white;
+    border:none;
+    box-shadow: 0px 0px 40px red;
+}
+
+.game-start:hover
+{
+    background-color: #e25e5e;
+    cursor: pointer;
+}
+
+
+.center1 {
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight:100;
+    animation: glitch 3s ease-in-out infinite;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.h1::before
+{
+color:rgb(217, 255, 0);
+animation: glitch 3s ease-in-out infinite;
+}
+.h1::after
+{
+    animation: glitch 3s ease-in-out infinite;
+    color:brown;
+}
+@keyframes glitch
+{
+0%{
+    left:-10px;
+    top:-10px;
+    color:rgb(250, 201, 201);
+}
+25%{
+left:-50px;
+top:50px;
+color:rgb(252, 99, 99);
+}
+50%{
+left:-1px;
+top:2px;
+color:rgb(248, 50, 50);
+}
+75%{
+left:1px;
+top:-1px;
+color:rgb(250, 174, 174);
+}
+100%{
+left:-0px;
+top:-2px;
+color:rgb(255, 255, 255);
+}
+}
+@media (max-width: 649px) {
+    .game-board {
+        width: 400px;
+        height: 600px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+    @media  (min-width:650px) and (max-width: 1024px) {
+        .game-board {
+            width: 600px;
+            height: 700px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+    }
+    @media  (min-width:1024px) and (max-width: 1800px) {
+        .game-board {
+            width: 950px;
+            height: 700px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+    }
